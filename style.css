@@ -1,6 +1,24 @@
-html {
-  width: 100%;
-}
 body {
-  
+  font-family: "Montserrat", sans-serif;
+}
+
+.carousel-inner img {
+  width: 700px;
+  height: 700px;
+}
+
+/* Top */
+#top {
+  background-color: #bce6eb;
+  height: 100px;
+  padding-top: 25px;
+}
+
+#top h1 {
+  padding-left: 2rem;
+}
+
+/* search-box */
+#search-box {
+  background-color: #bce6eb;
 }
