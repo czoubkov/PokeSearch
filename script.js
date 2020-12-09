@@ -22,6 +22,10 @@ function getPokemon() {
       document.getElementById("name").innerHTML = "Name: " + pokemon.name;
       document.getElementById("idNum").innerHTML = "PokeDex ID: " + pokemon.id;
       document.getElementById("type").innerHTML = "Type: " + pokemon.type;
+      document.getElementById("nameShiny").innerHTML = "Name: " + pokemon.name;
+      document.getElementById("idNumShiny").innerHTML =
+        "PokeDex ID: " + pokemon.id;
+      document.getElementById("typeShiny").innerHTML = "Type: " + pokemon.type;
     })
     .catch((error) => console.log("ERROR"));
 }

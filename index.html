@@ -118,6 +118,11 @@
     </div>
   </section>
 
+  <!-- About section -->
+  <section id="about">
+
+  </section>
+
   <!-- Search Box -->
 
   <section id="search-box" class="">
@@ -136,23 +141,39 @@
           });
         </script>
       </div>
-      <div class="poke-info">
-        <h3 id="name">Name: ditto</h3>
-        <h3 id="idNum">PokeDex ID: 132</h3>
-        <h3 id="type">Type: normal</h3>
-      </div>
       <div class="images">
-        <img id="sprite"
-          src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png"
-          alt="Pokémon Sprite"></img>
-      <img id="spriteShiny"
-          src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/132.png"
-          alt="Pokémon Shiny Sprite"></img>
+        <div class="card" style="width: 18rem;">
+          <img id="sprite" class="card-img-top"  src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png"
+          alt="Pokémon Sprite">
+          <div class="card-body">
+            <h3 id="name" class="card-text">Name: ditto</h3>
+          <h3 id="idNum" class="card-text">PokeDex ID: 132</h3>
+          <h3 id="type" class="card-text">Type: normal</h3>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img id="spriteShiny" class="card-img-top"  src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/132.png"
+          alt="Pokémon Shiny Sprite">
+          <div  class="card-body">
+            <h3 id="nameShiny" class="card-text">Name: ditto</h3>
+          <h3 id="idNumShiny" class="card-text">PokeDex ID: 132</h3>
+          <h3 id="typeShiny" class="card-text">Type: normal</h3>
+          </div>
+        </div>
       </div>
       
       
     </div>
   </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <i class="fab fa-twitter"></i>
+    <i class="fab fa-facebook"></i>
+    <i class="fab fa-instagram"></i>
+    <i class="fas fa-envelope"></i>
+    <p class="credits">Made using <a href="https://pokeapi.co/" target="_blank" alt="PokéAPI">PokéAPI</a></p>
+  </footer>
   
 </body>
 </html>
