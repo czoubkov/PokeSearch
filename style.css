@@ -14,11 +14,23 @@ body {
   padding-top: 25px;
 }
 
-#top h1 {
+#top .navbar-brand {
   padding-left: 2rem;
   color: #aee6e6;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   line-height: 1.5;
+}
+
+#top .nav-link {
+  color: #aee6e6;
+}
+
+.container-fluid {
+  padding: 3% 7%;
+}
+
+.fluid-1 {
+  padding-bottom: 7%;
 }
 
 /* Carousel */
@@ -60,4 +72,14 @@ body {
   width: 400px;
   background-color: #aee6e6;
   margin-left: 0.5rem;
+}
+
+#infoBox .poke-info {
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+.poke-info h3 {
+  display: inline;
+  margin-left: 2rem;
 }

@@ -51,9 +51,38 @@
 
 <body>
 
+   
   <!-- Heading -->
-  <div id="top" class="">
-    <h1>Pokémon Search</h1>
+  <div id="top" class="container-fluid fluid-1">
+    
+    <!-- Nav Bar -->
+   <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="">Pokémon Search</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#footer">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#search-box">Search</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
   </div>
 
   <!-- Carousel -->
@@ -105,7 +134,12 @@
                   $("#submit").click();
               }
           });
-      </script>
+        </script>
+      </div>
+      <div class="poke-info">
+        <h3 id="name">Name: ditto</h3>
+        <h3 id="idNum">PokeDex ID: 132</h3>
+        <h3 id="type">Type: normal</h3>
       </div>
       <div class="images">
         <img id="sprite"
@@ -116,9 +150,7 @@
           alt="Pokémon Shiny Sprite"></img>
       </div>
       
-      <div id="name">name: ditto</div>
-      <div id="idNum">id: 132</div>
-      <div id="type">type: normal</div>
+      
     </div>
   </section>
   
