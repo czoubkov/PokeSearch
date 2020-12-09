@@ -17,6 +17,7 @@ function getPokemon() {
         type: data.types.map((type) => type.type.name).join(", "),
       };
       console.log(pokemon);
+
       document.getElementById("sprite").src = pokemon.sprite;
       document.getElementById("spriteShiny").src = pokemon.spriteShiny;
       document.getElementById("name").innerHTML = "Name: " + pokemon.name;
