@@ -26,16 +26,51 @@ body {
 }
 
 #top .navbar-brand {
-  padding-left: 2rem;
+  padding-top: 18px;
+  padding-left: 8px;
   color: #ffffff;;
   font-size: 2.5rem;
   line-height: 1.5;
 }
 
-#top .nav-link {
-  color: #ffffff;
+.logo-container{
+  background-image: url("./pokeball.png");
+  background-size: cover;
+  height: 100px;
+  width: 100px;
+  opacity: 0.95;
+}
+.navbar-brand{
+  display: inline-block;
+  margin-top: 15px;
+  text-align:center;
+  text-decoration-style: double;
+  font-weight: bolder;
+  color:white;
+  font-size: 85%;
+  opacity: 100% !important;
+}
+.logo-container:hover{
+  opacity: 1.0;
 }
 
+#top .nav-link {
+  color: gray;
+  background-color:white;
+  border: 3px solid rgb(231, 224, 224);
+  border-radius: 15px;
+  
+}
+.nav-item{
+  font-size: smaller;
+  font-weight: lighter;
+  padding: 10px;
+  text-shadow: none;
+  opacity: .95;
+}
+.nav-item:hover{
+  opacity: 1.0;
+}
 .container-fluid {
   padding: 3% 7%;
 }
@@ -81,14 +116,32 @@ body {
   font-weight: 400;
   line-height: 1.5;
   margin-bottom: 3rem;
-  /*font-family: "Montserrat-Black", sans-serif;*/
   color: #ffffff;
   /*text-shadow: 3px 3px 5px rgba(0,0,0,.75);*/
   text-align: center;
+  opacity: .85;
 }
 
 #search .inputs {
   text-align: center;
+}
+
+#userInput{
+  font-size: 1.5rem;
+  opacity: .85;
+  border: none;
+  border-radius: 5px;
+}
+#submit{
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 15px;
+  outline: none;
+  opacity: .90;
+}
+
+#submit:active {
+  opacity: 1.0;
 }
 
 #infoBox .images {
@@ -97,20 +150,22 @@ body {
   padding-bottom: 10%;
 }
 #infoBox .images .card {
-  box-shadow: 2px 2px 4px 0 #333;
   box-sizing: border-box;
   display: inline-block;
-  margin: 0 0 1.5em;
   padding: 1em;
   background-color: #f4523b;
   /*margin-left: 0.25rem;
   margin-right: 0.25rem;*/
   margin-left: auto;
   margin-right: auto;
+  border: 10px solid rgb(236, 231, 231);
 }
-
+.image-grid-container{
+  border: 1px solid rgb(236, 231, 231);
+}
 #infoBox .card-body {
   margin: auto;
+  
 }
 #infoBox .poke-info {
   margin-top: 2.5rem;
@@ -119,8 +174,9 @@ body {
 
 #sprite, #name, #idNum, #type,
 #spriteShiny, #nameShiny, #idNumShiny, #typeShiny {
-  background-color: #333;
+  background-color: rgba(20, 20, 20, 0.781);
   color: #ffffff;
+  border: 1px solid rgb(236, 231, 231);
 }
 
 .sprites {
