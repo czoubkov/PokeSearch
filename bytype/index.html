@@ -8,11 +8,39 @@
   <link rel="stylesheet" href="style.css">
   <script src="script.js"></script>
 
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+      integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX"
+      crossorigin="anonymous"
+    />
+
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,500&family=Zilla+Slab:wght@500&display=swap');
     </style>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: #333; font-size: 1.4rem; border: 1px">
+        <a class="navbar-brand" style="font-size: 1.4rem;" href="index.html"><img id="logo" height="50" alt="" src="pokeball.png"></img></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active " href="../index.html">Home <span class="sr-only">(current)</span></a>
+            <div class="nav-item dropdown">
+              <a class="nav-link droptown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Search</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="../search.html">By name</a>
+              <a class="dropdown-item" href="bytype/index.html">By type</a>
+            </div>
+            </div>
+            <a class="nav-item nav-link" href="../about.html">About Us</a>
+          </div>
+        </div>
+      </nav>
+
     <div class="buttons-container">
         <ul class="buttons" style="max-width: 920px;">
             <li>
@@ -41,5 +69,24 @@
     <div class="list" id="mylist">
 
     </div>
+
+
+  <!-- Footer
+  <footer id="footer">
+    <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: #333; font-size: 1.4rem; border: 1px">
+      <a class="navbar-brand" style="font-size: 1.4rem;" href="https://pokeapi.co/">Made using PokéAPI</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+          <a class="nav-item nav-link" href="#"><i class="fab fa-twitter"></i></a>
+          <a class="nav-item nav-link" href="#"><i class="fab fa-facebook"></i></a>
+          <a class="nav-item nav-link" href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </nav>
+  </footer>
+   -->
 </body>
 </html>

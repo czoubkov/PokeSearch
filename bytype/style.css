@@ -3,11 +3,6 @@ body{
     background-image: url('background2.jpg');
 }
 
-.buttons{
-    text-align: center;
-    margin: 0 auto;
-    max-width: 1px;
-}
 .buttons img{
     max-width:100px;
     height:auto;
@@ -24,7 +19,7 @@ body{
     list-style-type: none;
     margin: 0 auto;
     overflow: hidden;
-    min-width: 696px;
+    min-width: 1096px;
 }
 .buttons-container ul li{
     display: inline;
@@ -115,3 +110,37 @@ body{
 .speed{
     background-color: black;
 }
+
+
+/* Footer */
+#footer {
+    background-color: #333;
+    color: #ffffff;
+    /*font-weight: 800;*/
+    /*text-shadow: 2px 2px 3px rgba(0,0,0,.75);*/
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+  }
+  
+  #footer .fab,
+  #footer .fas {
+    margin: 1rem 1rem;
+  }
+  
+  #footer .fab:hover,
+  #footer .fas:hover {
+    color: #e6e6e6;
+  }
+  
+  .card-text {
+    text-align: left;
+  }
+  
+  #footer a {
+    color: white;
+  }
+  
+  i:hover {
+    transform: scale(1.2)
+  }
