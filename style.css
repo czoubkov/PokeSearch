@@ -51,7 +51,7 @@ body {
 
 /* search-box */
 #search-box {
-  padding: 7% 15%;
+  padding: 3% 15%;
   background-size: 100%;
   background-image: linear-gradient(rgba(0,153,255,1), rgba(100,100,100,.2));
   border: 1px solid black;
