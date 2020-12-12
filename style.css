@@ -153,3 +153,8 @@ i:hover {
   /* For 2 columns */ 
   grid-template-columns: auto auto; 
 } 
+
+.carousel-control-prev,
+.carousel-control-next{
+    align-items: flex-end; /* Aligns it at the bottom */
+}
