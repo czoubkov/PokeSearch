@@ -19,16 +19,56 @@ body {
 }
 
 #top .navbar-brand {
-  padding-left: 2rem;
+  /* padding-left: 2rem; */
+  padding-top: 18px;
+  padding-left: 8px;
   color: #ffffff;;
   font-size: 2.5rem;
   line-height: 1.5;
 }
 
-#top .nav-link {
-  color: #ffffff;
+.logo-container{
+  background-image: url("./pokeball.png");
+  background-size: cover;
+  height: 100px;
+  width: 100px;
+  opacity: 0.95;
+  /* border:1px solid red;    
+  height:100px;
+  border-radius:50%;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  width:100px; */
+}
+.navbar-brand{
+  display: inline-block;
+  margin-top: 15px;
+  text-align:center;
+  text-decoration-style: double;
+  font-weight: bolder;
+  color:white;
+  font-size: 85%;
+  opacity: 100% !important;
+}
+.logo-container:hover{
+  opacity: 1.0;
 }
 
+#top .nav-link {
+  color: gray;
+  background-color:white;
+  border: 3px solid rgb(231, 224, 224);
+  border-radius: 15px;
+  
+}
+.nav-item{
+  padding: 10px;
+  text-shadow: none;
+  opacity: .85;
+}
+.nav-item:hover{
+  opacity: 1.0;
+}
 .container-fluid {
   padding: 3% 7%;
 }
