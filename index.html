@@ -51,53 +51,42 @@
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: #333; font-size: 1.4rem; border: 1px">
-    <a class="navbar-brand" style="font-size: 1.4rem;" href="index.html">PokéSearch</a>
+    <a class="navbar-brand" style="font-size: 1.4rem;" href="index.html"><img id="logo" height="50" alt="" src="pokeball.png"></img></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-item nav-link active " href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link active " href="index.html">Home <span class="sr-only">(current)</span></a>
+        <div class="nav-item dropdown">
+          <a class="nav-link droptown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Search</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="search.html">By name</a>
+          <a class="dropdown-item" href="#">By type</a>
+        </div>
+        </div>
         <a class="nav-item nav-link" href="about.html">About Us</a>
       </div>
     </div>
   </nav>
 
-  <!-- Search Box -->
-
-  <section id="search-box" class="search-box">
-    <div id="infoBox">
-      <h1>Enter a Pokémon's name or number</h1>
-      <div id="search">
-        <div class="inputs">
-          <input id="userInput" class="form-control ml-auto mr-auto col-3" style="display: inline-block" onkeyup="getPokemon()" value="ditto"></input>
-          <button id="submit" class="btn btn-primary mb-2" onclick="getPokemon()">Submit</button>
-        </div>
-        <script>
-          $("#userInput").keypress(function(event) {
-              if (event.keyCode === 13) {
-                  $("#submit").click();
-              }
-          });
-        </script>
-      </div>
-      <div class="images">
-          <div class="card col-lg-5 cold-md-8 col-sm-12" style="width: 180rem;">
-            <div class="image-grid-container">
-              <img id="sprite" class="card-img-top list-group-item"  src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png"
-              alt="Pokémon Sprite">
-              <img id="spriteShiny" class="card-img-top list-group-item"  src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/132.png"
-              alt="Pokémon Shiny Sprite">
-            </div>
-            <div class="card-body">
-              <h3 id="name" class="card-text list-group-item">Name: ditto</h3>
-              <h3 id="idNum" class="card-text list-group-item">PokeDex ID: 132</h3>
-              <h3 id="type" class="card-text list-group-item">Type: normal</h3>
-            </div>
-          </div>
-      </div>
+<!-- Home Page -->
+<section id="home-page" class="home-page">
+  <div>
+    <!--<h1>PokéSearch</h1>-->
+    <img id="logo" src="textlogo.png"></img>
+    <div id="buttons">
+      <button type="button" class="btn btn-primary btn-lg">Search by name</button>
+      <button type="button" class="btn btn-success btn-lg">Search by type</button>
     </div>
-  </section>
+  </div>
+  <div class="overlay">
+    <img src="vignette3.png"></img>
+  </div>
+  <video autoplay muted loop id="myVideo">
+    <source src="Pokemon Ruby Sapphire Cloudy Sea Animated.mp4" type="video/mp4">
+  </video>
+</section>
 
   <!-- Footer -->
   <footer id="footer">
