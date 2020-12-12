@@ -9,11 +9,6 @@ body {
   height: 100%;
 }
 
-.carousel-inner img {
-  width: 700px;
-  height: 700px;
-}
-
 /* Top */
 #top {
   background-color: #0099ff;
@@ -26,50 +21,14 @@ body {
 }
 
 #top .navbar-brand {
-  padding-top: 18px;
-  padding-left: 8px;
+  padding-left: 2rem;
   color: #ffffff;;
   font-size: 2.5rem;
   line-height: 1.5;
 }
 
-.logo-container{
-  background-image: url("./pokeball.png");
-  background-size: cover;
-  height: 100px;
-  width: 100px;
-  opacity: 0.95;
-}
-.navbar-brand{
-  display: inline-block;
-  margin-top: 15px;
-  text-align:center;
-  text-decoration-style: double;
-  font-weight: bolder;
-  color:white;
-  font-size: 85%;
-  opacity: 100% !important;
-}
-.logo-container:hover{
-  opacity: 1.0;
-}
-
 #top .nav-link {
-  color: gray;
-  background-color:white;
-  border: 3px solid rgb(231, 224, 224);
-  border-radius: 15px;
-  
-}
-.nav-item{
-  font-size: smaller;
-  font-weight: lighter;
-  padding: 10px;
-  text-shadow: none;
-  opacity: .95;
-}
-.nav-item:hover{
-  opacity: 1.0;
+  color: #ffffff;
 }
 .container-fluid {
   padding: 3% 7%;
@@ -77,21 +36,6 @@ body {
 
 .fluid-1 {
   padding-bottom: 7%;
-}
-
-/* Carousel */
-#carousel {
-  height: 100%;
-  background-size: 100%;
-  /*background-image: url('../background-blurred.png');*/
-  /*background-color: #9999FF;*/
-  /*background-image: linear-gradient(rgb(88, 166, 255, .1), rgba(20,10,20,.1));;*/
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
-#carousel img {
-  height: 500px;
-  width: 100%;
 }
 
 /* search-box */
