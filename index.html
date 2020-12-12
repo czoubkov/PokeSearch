@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Pokémon Search</title>
+  <title>PokéSearch</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -57,7 +57,7 @@
     
     <!-- Nav Bar -->
    <nav class="navbar navbar-expand-lg navbar-dark">
-    <a class="navbar-brand" href="">Pokémon Search</a>
+    <a class="navbar-brand" href="">PokéSearch</a>
     <button
       class="navbar-toggler"
       type="button"
@@ -87,7 +87,7 @@
 
   <!-- Carousel -->
 
-  <section id="carousel" class="container">
+  <section id="carousel" class="container-fluid">
     <div class="d-flex justify-content-center">
       <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
         <ol class="carousel-indicators">
@@ -97,13 +97,13 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="d-block" src="pokemon-1.jpg" alt="First slide">
+            <img class="d-block" src="many_pokemon.png" alt="First slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block" src="pokemon-2.jpg" alt="Second slide">
+            <img class="d-block" src="Poké_Balls_GL.png" alt="Second slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block" src="pokemon-3.jpeg" alt="Third slide">
+            <img class="d-block" src="pokemon games.png" alt="Third slide">
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -117,16 +117,10 @@
       </div>
     </div>
   </section>
-
-  <!-- About section -->
-  <section id="about">
-    <h3>About Us</h3>
-    <p>Being 90's babies, we all grew up on Pokemon! For this project we felt it would be a cute idea to create a web app that allows users to look up various pokemon. You can search based on either the Pokemon name or it's Pokedex number. Go ahead and relive your childhood!</p>
-  </section>
-
+  
   <!-- Search Box -->
 
-  <section id="search-box" class="">
+  <section id="search-box" class="search-box">
     <div id="infoBox">
       <h1>Enter a Pokémon's name or number</h1>
       <div id="search">
@@ -143,24 +137,19 @@
         </script>
       </div>
       <div class="images">
-        <div class="card" style="width: 18rem;">
-          <img id="sprite" class="card-img-top"  src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png"
-          alt="Pokémon Sprite">
-          <div class="card-body">
-            <h3 id="name" class="card-text">Name: ditto</h3>
-          <h3 id="idNum" class="card-text">PokeDex ID: 132</h3>
-          <h3 id="type" class="card-text">Type: normal</h3>
+          <div class="card col-lg-5 cold-md-8 col-sm-12" style="width: 180rem;">
+            <div class="image-grid-container">
+              <img id="sprite" class="card-img-top list-group-item"  src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png"
+              alt="Pokémon Sprite">
+              <img id="spriteShiny" class="card-img-top list-group-item"  src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/132.png"
+              alt="Pokémon Shiny Sprite">
+            </div>
+            <div class="card-body">
+              <h3 id="name" class="card-text list-group-item">Name: ditto</h3>
+              <h3 id="idNum" class="card-text list-group-item">PokeDex ID: 132</h3>
+              <h3 id="type" class="card-text list-group-item">Type: normal</h3>
+            </div>
           </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-          <img id="spriteShiny" class="card-img-top"  src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/132.png"
-          alt="Pokémon Shiny Sprite">
-          <div  class="card-body">
-            <h3 id="nameShiny" class="card-text">Name: ditto</h3>
-          <h3 id="idNumShiny" class="card-text">PokeDex ID: 132</h3>
-          <h3 id="typeShiny" class="card-text">Type: normal</h3>
-          </div>
-        </div>
       </div>
       
       
@@ -172,7 +161,7 @@
     <i class="fab fa-twitter"></i>
     <i class="fab fa-facebook"></i>
     <i class="fab fa-instagram"></i>
-    <p>© Copyright 2020 PokeSearch</p>
+    <p>© Copyright 2020 PokéSearch</p>
     <p class="credits">Made using <a href="https://pokeapi.co/" target="_blank" alt="PokéAPI">PokéAPI</a></p>
   </footer>
   

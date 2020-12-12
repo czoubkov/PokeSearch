@@ -9,20 +9,24 @@ body {
 
 /* Top */
 #top {
-  background-color: #ffa45b;
-  height: 100px;
+  background-color: #0099ff;
+  font-size: 20px;
+  text-shadow: 2px 2px 3px rgba(0,0,0,.75);
+  font-weight: 800;
+  height: 0px;
   padding-top: 25px;
+  border: 1px solid black;
 }
 
 #top .navbar-brand {
   padding-left: 2rem;
-  color: #aee6e6;
+  color: #ffffff;;
   font-size: 2.5rem;
   line-height: 1.5;
 }
 
 #top .nav-link {
-  color: #aee6e6;
+  color: #ffffff;
 }
 
 .container-fluid {
@@ -35,13 +39,23 @@ body {
 
 /* Carousel */
 #carousel {
-  padding: 3% 10%;
+  background-size: 100%;
+  background-image: url('../background-blurred.png');
+  background-color: #333;
+}
+
+#carousel img {
+  height: 500px;
+  width: 100%;
 }
 
 /* search-box */
 #search-box {
   padding: 7% 15%;
-  background-color: #ffa45b;
+  background-size: 100%;
+  background-image: linear-gradient(rgba(0,153,255,1), rgba(100,100,100,.2));
+  border: 1px solid black;
+  /*background-image: url('../background-blurred.png');*/
 }
 
 #infoBox h1 {
@@ -49,8 +63,9 @@ body {
   font-size: 3.5rem;
   line-height: 1.5;
   margin-bottom: 3rem;
-  font-family: "Montserrat-Black", sans-serif;
-  color: #aee6e6;
+  /*font-family: "Montserrat-Black", sans-serif;*/
+  color: #ffffff;
+  text-shadow: 3px 3px 5px rgba(0,0,0,.75);
   text-align: center;
 }
 
@@ -68,14 +83,30 @@ body {
   display: inline-block;
   margin: 0 0 1.5em;
   padding: 1em;
-  width: 400px;
-  background-color: #aee6e6;
-  margin-left: 0.5rem;
+  background-color: #ff0000;
+  /*margin-left: 0.25rem;
+  margin-right: 0.25rem;*/
+  margin-left: auto;
+  margin-right: auto;
 }
 
+#infoBox .card-body {
+  margin: auto;
+}
 #infoBox .poke-info {
   margin-top: 2.5rem;
   text-align: center;
+}
+
+#sprite, #name, #idNum, #type,
+#spriteShiny, #nameShiny, #idNumShiny, #typeShiny {
+  background-color: #333;
+  color: #ffffff;
+}
+
+.sprites {
+  display: flex;
+  justify-content: center;
 }
 
 .poke-info h3 {
@@ -83,10 +114,14 @@ body {
   margin-left: 2rem;
 }
 
-/* FOoter */
+/* Footer */
 #footer {
   text-align: center;
-  color: #afafaf;
+  background-color: #0099ff;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 25px;
+  text-shadow: 2px 2px 3px rgba(0,0,0,.75);
   padding: 1% 15%;
 }
 
@@ -97,5 +132,24 @@ body {
 
 #footer .fab:hover,
 #footer .fas:hover {
-  color: #7579e7;
+  color: #e6e6e6;
 }
+
+.card-text {
+  text-align: left;
+}
+
+#footer a {
+  color: white;
+}
+
+i:hover {
+  transform: scale(1.2)
+}
+
+.image-grid-container { 
+  display: grid; 
+
+  /* For 2 columns */ 
+  grid-template-columns: auto auto; 
+} 
