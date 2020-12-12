@@ -57,46 +57,29 @@
     </button>
     <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-item nav-link active " href="#">Home <span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link" href="about.html">About Us</a>
+        <a class="nav-item nav-link" href="index.html">Home</a>
+        <a class="nav-item nav-link active" href="about.html">About Us <span class="sr-only">(current)</span></a>
       </div>
     </div>
   </nav>
 
-  <!-- Search Box -->
-
-  <section id="search-box" class="search-box">
-    <div id="infoBox">
-      <h1>Enter a Pokémon's name or number</h1>
-      <div id="search">
-        <div class="inputs">
-          <input id="userInput" class="form-control ml-auto mr-auto col-3" style="display: inline-block" onkeyup="getPokemon()" value="ditto"></input>
-          <button id="submit" class="btn btn-primary mb-2" onclick="getPokemon()">Submit</button>
-        </div>
-        <script>
-          $("#userInput").keypress(function(event) {
-              if (event.keyCode === 13) {
-                  $("#submit").click();
-              }
-          });
-        </script>
-      </div>
-      <div class="images">
-          <div class="card col-lg-5 cold-md-8 col-sm-12" style="width: 180rem;">
-            <div class="image-grid-container">
-              <img id="sprite" class="card-img-top list-group-item"  src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png"
-              alt="Pokémon Sprite">
-              <img id="spriteShiny" class="card-img-top list-group-item"  src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/132.png"
-              alt="Pokémon Shiny Sprite">
-            </div>
-            <div class="card-body">
-              <h3 id="name" class="card-text list-group-item">Name: ditto</h3>
-              <h3 id="idNum" class="card-text list-group-item">PokeDex ID: 132</h3>
-              <h3 id="type" class="card-text list-group-item">Type: normal</h3>
-            </div>
-          </div>
-      </div>
+  <!-- About Us -->
+  <section id="about-us" class="about-us">
+  <div>
+    <h1>What inspired us?</h1>
+     <div id="images">
+      <img id="img1" src="Pokemon-Games-In-Order.jpg"></img>
+      <img id="img2" src="tradingcardgame.jpg"></img>
+      <img id="img3" src="ash-pikachu.jpg"></img>
     </div>
+    <div id="text1">All four of us grew up with Pokémon, and I'm sure many of you reading have had the same experience.
+      We played the games, we collected the cards, and we watched the show.
+      Most APIs out there do seem like random data or pertain to more serious topics.
+      We found out that PokéAPI exists, which gave us the idea to do something different
+      and make a fun application dedicated to an important part of our childhoods.
+
+    </div>
+  </div>
   </section>
 
   <!-- Footer -->

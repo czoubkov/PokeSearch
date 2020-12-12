@@ -1,5 +1,12 @@
+html {
+  height: 100%;
+  overflow-y: hidden;
+}
+
 body {
-  font-family: "Montserrat", sans-serif;
+  /*font-family: "Montserrat", sans-serif;*/
+  background-size: cover;
+  height: 100%;
 }
 
 .carousel-inner img {
@@ -41,7 +48,8 @@ body {
 #carousel {
   background-size: 100%;
   background-image: url('../background-blurred.png');
-  background-color: #333;
+  /*background-color: #9999FF;*/
+  background-image: linear-gradient(rgb(88, 166, 255), rgba(200,100,100,.7));
 }
 
 #carousel img {
@@ -51,21 +59,29 @@ body {
 
 /* search-box */
 #search-box {
-  padding: 3% 15%;
-  background-size: 100%;
-  background-image: linear-gradient(rgba(0,153,255,1), rgba(100,100,100,.2));
-  border: 1px solid black;
+  padding: 2% 15%;
+  background-size: cover;
+  /*background-image: linear-gradient(rgba(0,153,255,1), rgba(100,100,100,.2));*/
+  /*background-color: #d49994;*/
+  /*border: 1px solid black;*/
   /*background-image: url('../background-blurred.png');*/
+  background-image: url('../ruby-sapphire-intro-gradient.jpg');
+  margin-bottom: 0m;
+}
+
+#search-box h1 {
+  text-shadow: 2px 2px 3px rgba(0,0,0,.55);
 }
 
 #infoBox h1 {
   font-weight: bolder;
   font-size: 3.5rem;
+  font-weight: 400;
   line-height: 1.5;
   margin-bottom: 3rem;
   /*font-family: "Montserrat-Black", sans-serif;*/
   color: #ffffff;
-  text-shadow: 3px 3px 5px rgba(0,0,0,.75);
+  /*text-shadow: 3px 3px 5px rgba(0,0,0,.75);*/
   text-align: center;
 }
 
@@ -76,6 +92,7 @@ body {
 #infoBox .images {
   margin-top: 2.5rem;
   text-align: center;
+  padding-bottom: 10%;
 }
 #infoBox .images .card {
   box-shadow: 2px 2px 4px 0 #333;
@@ -83,7 +100,7 @@ body {
   display: inline-block;
   margin: 0 0 1.5em;
   padding: 1em;
-  background-color: #ff0000;
+  background-color: #f4523b;
   /*margin-left: 0.25rem;
   margin-right: 0.25rem;*/
   margin-left: auto;
@@ -116,13 +133,13 @@ body {
 
 /* Footer */
 #footer {
-  text-align: center;
-  background-color: #0099ff;
+  background-color: #333;
   color: #ffffff;
-  font-weight: 800;
-  font-size: 25px;
-  text-shadow: 2px 2px 3px rgba(0,0,0,.75);
-  padding: 1% 15%;
+  /*font-weight: 800;*/
+  /*text-shadow: 2px 2px 3px rgba(0,0,0,.75);*/
+  bottom: 0;
+  position: fixed;
+  width: 100%;
 }
 
 #footer .fab,
@@ -157,4 +174,26 @@ i:hover {
 .carousel-control-prev,
 .carousel-control-next{
     align-items: flex-end; /* Aligns it at the bottom */
+}
+
+.about-us {
+  background-image: url('../ruby-sapphire-intro-gradient.jpg');
+  background-size: cover;
+  height: 100%;
+  text-align: center;
+  padding: 2% 15%;
+  text-shadow: 2px 2px 3px rgba(0,0,0,.55);
+  color: #ffffff;
+}
+
+.about-us img {
+  height: 15rem;
+}
+.about-us #images {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.about-us #text1 {
+  font-size: 25px;
+  text-align: justify;
 }
