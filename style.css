@@ -8,11 +8,11 @@ body {
   height: 100%;
 }
 
-#home, ##searchbytype {
+#home, #searchbytype {
   overflow-y: hidden;
 }
 
-#searchbyname, #about {
+#home, #searchbyname, #about {
   background-image: url('../ruby-sapphire-intro-gradient.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -144,14 +144,18 @@ body {
 #footer {
   background-color: #333;
   color: #ffffff;
-  position: fixed;
-  bottom: 0;
   width: 100%;
   height: 6%;
 }
 
+.nonstickyfooter {
+  position: relative;
+  bottom: 0;
+}
+
 .stickyfooter {
   position: fixed;
+  bottom: 0;
 }
 
 #footer .fab:hover,
@@ -180,7 +184,7 @@ i:hover {
 
 .about-us {
   text-align: center;
-  padding: 2% 15%;
+  padding: 2% 15% 6%;
   text-shadow: 2px 2px 3px rgba(0,0,0,.55);
   color: #ffffff;
 }
