@@ -9,6 +9,14 @@ body{
     opacity: .8;
 }
 
+.buttons img:hover {
+  transform: scale(1.02)
+}
+
+.buttons img:active {
+  translate: 0 2px;
+}
+
 .buttons-container{
     text-align: center;
     margin: auto;
@@ -81,7 +89,7 @@ body{
 .stats{
     height: 32px;
     margin: 0 auto;
-    margin-top: 15px;
+    margin-top: 7px;
     font-size: 12px;
     opacity: .65;
     /* display: flex; */
@@ -143,4 +151,11 @@ body{
   
   i:hover {
     transform: scale(1.2)
+  }
+
+  #navbar { 
+    transform: translateY(-100%); /* normal, hidden state */
+  }
+  .nav-container:hover #navbar {
+    transform: translateY(0); /* when parent is hovered */
   }
