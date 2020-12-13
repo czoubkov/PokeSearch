@@ -8,8 +8,14 @@ body {
   height: 100%;
 }
 
-#home, #searchbytype {
+#home, ##searchbytype {
   overflow-y: hidden;
+}
+
+#searchbyname, #about {
+  background-image: url('../ruby-sapphire-intro-gradient.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 /* Top */
@@ -49,8 +55,6 @@ body {
   /*background-color: #d49994;*/
   /*border: 1px solid black;*/
   /*background-image: url('../background-blurred.png');*/
-  background-image: url('../ruby-sapphire-intro-gradient.jpg');
-  margin-bottom: 0em;
 }
 
 #search-box h1 {
@@ -140,6 +144,7 @@ body {
 #footer {
   background-color: #333;
   color: #ffffff;
+  position: fixed;
   bottom: 0;
   width: 100%;
   height: 6%;
@@ -171,17 +176,9 @@ i:hover {
 
   /* For 2 columns */ 
   grid-template-columns: auto auto; 
-} 
-
-.carousel-control-prev,
-.carousel-control-next{
-    align-items: flex-end; /* Aligns it at the bottom */
 }
 
 .about-us {
-  background-image: url('../ruby-sapphire-intro-gradient.jpg');
-  background-size: cover;
-  height: 100%;
   text-align: center;
   padding: 2% 15%;
   text-shadow: 2px 2px 3px rgba(0,0,0,.55);
