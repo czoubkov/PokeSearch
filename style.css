@@ -102,13 +102,15 @@ body {
   margin: 0 0 1.5em;
   padding: 1em;
   background-color: #f4523b;
+  background-image: linear-gradient(rgb(244, 82, 59, 1), rgba(0,0,0,.35));
+  /*background-color: #333;*/
   /*margin-left: 0.25rem;
   margin-right: 0.25rem;*/
   margin-left: auto;
   margin-right: auto;
 }
-.image-grid-container{
-  border: 1px solid rgb(236, 231, 231);
+#infoBox img {
+  border-radius: 0;
 }
 #infoBox .card-body {
   margin: auto;
@@ -248,4 +250,7 @@ i:hover {
 
 #home-page #buttons {
   margin-top: 5rem;
+}
+.list-group-item {
+  margin-bottom: 0;
 }

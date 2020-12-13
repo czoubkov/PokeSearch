@@ -2,7 +2,9 @@ body{
     background-color: rgba(218, 209, 209, 0.404);
     background-image: url('background2.jpg');
 }
-
+.buttons { 
+  padding: 10px;
+}
 .buttons img{
     max-width:100px;
     height:auto;
@@ -10,7 +12,7 @@ body{
 }
 
 .buttons img:hover {
-  transform: scale(1.02)
+  transform: scale(1.04)
 }
 
 .buttons img:active {
