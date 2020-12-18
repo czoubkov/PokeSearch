@@ -1,82 +1,38 @@
 html {
   height: 100%;
 }
-
 body {
-  /*font-family: "Montserrat", sans-serif;*/
   background-size: cover;
   height: 100%;
 }
-
 #home, #searchbytype {
   overflow-y: hidden;
 }
-
 #home, #searchbyname, #about {
   background-image: url('../ruby-sapphire-intro-gradient.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-
-/* Top */
-#top {
-  background-color: #0099ff;
-  font-size: 20px;
-  text-shadow: 2px 2px 3px rgba(0,0,0,.75);
-  font-weight: 800;
-  height: 0px;
-  padding-top: 25px;
-  border: 1px solid black;
-}
-
-#top .navbar-brand {
-  padding-left: 2rem;
-  color: #ffffff;;
-  font-size: 2.5rem;
-  line-height: 1.5;
-}
-
-#top .nav-link {
-  color: #ffffff;
-}
-.container-fluid {
-  padding: 3% 7%;
-}
-
-.fluid-1 {
-  padding-bottom: 7%;
-}
-
 /* search-box */
 #search-box {
   padding: 2% 15%;
   background-size: cover;
-  /*background-image: linear-gradient(rgba(0,153,255,1), rgba(100,100,100,.2));*/
-  /*background-color: #d49994;*/
-  /*border: 1px solid black;*/
-  /*background-image: url('../background-blurred.png');*/
 }
-
 #search-box h1 {
   text-shadow: 2px 2px 3px rgba(0,0,0,.55);
 }
-
 #infoBox h1 {
   font-weight: bolder;
   font-size: 3.5rem;
   font-weight: 400;
   line-height: 1.5;
   margin-bottom: 3rem;
-  /*font-family: "Montserrat-Black", sans-serif;*/
   color: #ffffff;
-  /*text-shadow: 3px 3px 5px rgba(0,0,0,.75);*/
   text-align: center;
 }
-
 #search .inputs {
   text-align: center;
 }
-
 #userInput{
   font-size: 1.5rem;
   opacity: .85;
@@ -89,11 +45,9 @@ body {
   outline: none;
   opacity: .90;
 }
-
 #submit:active {
   opacity: 1.0;
 }
-
 #infoBox .images {
   margin-top: 2.5rem;
   text-align: center;
@@ -107,9 +61,6 @@ body {
   padding: 1em;
   background-color: #f4523b;
   background-image: linear-gradient(rgb(244, 82, 59, 1), rgba(0,0,0,.35));
-  /*background-color: #333;*/
-  /*margin-left: 0.25rem;
-  margin-right: 0.25rem;*/
   margin-left: auto;
   margin-right: auto;
 }
@@ -123,23 +74,19 @@ body {
   margin-top: 2.5rem;
   text-align: center;
 }
-
 #sprite, #name, #idNum, #type,
 #spriteShiny, #nameShiny, #idNumShiny, #typeShiny {
   background-color: #333;
   color: #ffffff;
 }
-
 .sprites {
   display: flex;
   justify-content: center;
 }
-
 .poke-info h3 {
   display: inline;
   margin-left: 2rem;
 }
-
 /* Footer */
 #footer {
   background-color: #333;
@@ -147,34 +94,27 @@ body {
   width: 100%;
   height: 6%;
 }
-
 .nonstickyfooter {
   position: relative;
   bottom: 0;
 }
-
 .stickyfooter {
   position: fixed;
   bottom: 0;
 }
-
 #footer .fab:hover,
 #footer .fas:hover {
   color: #e6e6e6;
 }
-
 .card-text {
   text-align: left;
 }
-
 #footer a {
   color: white;
 }
-
 i:hover {
   transform: scale(1.2)
 }
-
 .image-grid-container { 
   display: grid; 
 
@@ -188,7 +128,6 @@ i:hover {
   text-shadow: 2px 2px 3px rgba(0,0,0,.55);
   color: #ffffff;
 }
-
 .about-us img {
   height: 15rem;
 }
@@ -211,7 +150,6 @@ i:hover {
   min-height: 100%;
   z-index: -2;
 }
-
 .overlay {
   position: absolute;
   top: 0;
@@ -228,7 +166,6 @@ i:hover {
   object-fit:cover;
   pointer-events:none;
 }
-
 #home-page {
   height: 100%;
   background-size: 100%;
@@ -237,21 +174,15 @@ i:hover {
   text-shadow: 4px 4px 4px rgba(0,0,0,.55);
   color: #ffffff;
 }
-
 #home-page h1 {
   font-size: 120px;
   font-weight: bolder;
   margin-top: 14rem;
 }
-
 #home-page #logo {
   opacity: .85;
   margin-top: 10rem;
 }
-
 #home-page #buttons {
   margin-top: 5rem;
-}
-.list-group-item {
-  margin-bottom: 0;
 }
