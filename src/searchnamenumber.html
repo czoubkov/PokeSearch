@@ -7,26 +7,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-
-    <!-- font awesome -->
-    <script
-      src="https://kit.fontawesome.com/ddf8b55688.js"
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- Bootstrap -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
-      integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX"
-      crossorigin="anonymous"
-    />
-
-    <!-- Google fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Bootstrap -->
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+    integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX"
+    crossorigin="anonymous"
+  />
 
   <!-- Our own CSS and JS-->
   <link rel="stylesheet" href="style.css">
@@ -35,23 +22,21 @@
   <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-  
-  <link href='https://fonts.googleapis.com/css?family=Days One' rel='stylesheet'>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+
   <script>
-  document.getElementById('userInput')
-  .addEventListener('keyup', function(event) {
-    if (event.code === 'Enter') {
-      event.preventDefault();
-      document.querySelector('submit').submit();
-    }
-  });
+    document.getElementById('userInput')
+    .addEventListener('keyup', function(event) {
+      if (event.code === 'Enter') {
+        event.preventDefault();
+        document.querySelector('submit').submit();
+      }
+    });
   </script>
 </head>
 
 <body id="searchbyname">
   <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: #333; font-size: 1.4rem; border: 1px">
-    <a class="navbar-brand" style="font-size: 1.4rem;" href="index.html"><img id="logo" height="50" alt="" src="pokeball.png"></img></a>
+    <a class="navbar-brand" style="font-size: 1.4rem;" href="index.html"><img id="logo" height="50" alt="" src="../assets/pokeball.png"></img></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -62,7 +47,7 @@
           <a class="nav-link droptown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Search</a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="#">By name</a>
-            <a class="dropdown-item" href="bytype/index.html">By type</a>
+            <a class="dropdown-item" href="searchtype.html">By type</a>
           </div>
         </div>
         <a class="nav-item nav-link" href="about.html">About Us</a>
@@ -71,37 +56,34 @@
   </nav>
 
   <!-- Search Box -->
-
   <section id="search-box" class="search-box">
     <div id="infoBox">
       <h1>Enter a Pokémon's name or number</h1>
       <div id="search">
         <div class="inputs">
-          <input id="userInput" class="form-control ml-auto mr-auto col-3" style="display: inline-block" onkeyup="getPokemon()" value="ditto"></input>
-          <button id="submit" class="btn btn-primary" style="margin-bottom: .7rem;" onclick="getPokemon()">Submit</button>
+          <input id="userInput" class="form-control ml-auto mr-auto col-3" style="display: inline-block" onkeyup="searchNameNumber()" value="ditto"></input>
+          <button id="submit" class="btn btn-primary" style="margin-bottom: .7rem;" onclick="searchNameNumber()">Submit</button>
         </div>
         <script>
           $("#userInput").keypress(function(event) {
-              if (event.keyCode === 13) {
-                  $("#submit").click();
-              }
+            if (event.keyCode === 13) {
+              $("#submit").click();
+            }
           });
         </script>
       </div>
       <div class="images">
-          <div class="card col-lg-5 cold-md-8 col-sm-12" style="width: 180rem;">
-            <div class="image-grid-container">
-              <img id="sprite" class="card-img-top" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png"
-              alt="Pokémon Sprite">
-              <img id="spriteShiny" class="card-img-top" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/132.png"
-              alt="Pokémon Shiny Sprite">
-            </div>
-            <div class="card-body" style="margin: 0;">
-              <h3 id="name" class="card-text list-group-item"><b>Name:</b> ditto</h3>
-              <h3 id="idNum" class="card-text list-group-item"><b>ID:</b> 132</h3>
-              <h3 id="type" class="card-text list-group-item"><b>Type:</b> normal</h3>
-            </div>
+        <div class="card col-lg-5 cold-md-8 col-sm-12" style="width: 180rem;">
+          <div class="image-grid-container">
+            <img id="sprite" class="card-img-top" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png" alt="Pokémon Sprite">
+            <img id="spriteShiny" class="card-img-top" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/132.png" alt="Pokémon Shiny Sprite">
           </div>
+          <div class="card-body" style="margin: 0;">
+            <h3 id="name" class="card-text list-group-item"><b>Name:</b> ditto</h3>
+            <h3 id="idNum" class="card-text list-group-item"><b>ID:</b> 132</h3>
+            <h3 id="type" class="card-text list-group-item"><b>Type:</b> normal</h3>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -122,6 +104,6 @@
       </div>
     </nav>
   </footer>
-  
 </body>
+
 </html>

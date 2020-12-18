@@ -9,7 +9,7 @@ body {
   overflow-y: hidden;
 }
 #home, #searchbyname, #about {
-  background-image: url('../ruby-sapphire-intro-gradient.jpg');
+  background-image: url('../assets/ruby-sapphire-intro-gradient.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
 }

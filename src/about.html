@@ -7,26 +7,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-
-    <!-- font awesome -->
-    <script
-      src="https://kit.fontawesome.com/ddf8b55688.js"
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- Bootstrap -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
-      integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX"
-      crossorigin="anonymous"
-    />
-
-    <!-- Google fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Bootstrap -->
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+    integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX"
+    crossorigin="anonymous"
+  />
 
   <!-- Our own CSS and JS-->
   <link rel="stylesheet" href="style.css">
@@ -35,23 +22,11 @@
   <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-  
-  <link href='https://fonts.googleapis.com/css?family=Days One' rel='stylesheet'>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
-  <script>
-  document.getElementById('userInput')
-  .addEventListener('keyup', function(event) {
-    if (event.code === 'Enter') {
-      event.preventDefault();
-      document.querySelector('submit').submit();
-    }
-  });
-  </script>
 </head>
 
 <body id="about">
   <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: #333; font-size: 1.4rem; border: 1px">
-    <a class="navbar-brand" style="font-size: 1.4rem;" href="index.html"><img id="logo" height="50" alt="" src="pokeball.png"></img></a>
+    <a class="navbar-brand" style="font-size: 1.4rem;" href="index.html"><img id="logo" height="50" alt="" src="../assets/pokeball.png"></img></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -61,8 +36,8 @@
         <div class="nav-item dropdown">
           <a class="nav-link droptown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Search</a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="search.html">By name</a>
-            <a class="dropdown-item" href="bytype/index.html">By type</a>
+            <a class="dropdown-item" href="searchnamenumber.html">By name</a>
+            <a class="dropdown-item" href="searchtype.html">By type</a>
           </div>
         </div>
         <a class="nav-item nav-link active" href="about.html">About Us</a>
@@ -72,21 +47,21 @@
 
   <!-- About Us -->
   <section id="about-us" class="about-us">
-  <div>
-    <h1>What inspired us?</h1>
-     <div id="images">
-      <img id="img1" src="Pokemon-Games-In-Order.jpg"></img>
-      <img id="img2" src="tradingcardgame.jpg"></img>
-      <img id="img3" src="ash-pikachu.jpg"></img>
-    </div>
-    <div id="text1">All four of us grew up with Pokémon, and I'm sure many of you reading have had the same experience.
-      We played the games, we collected the cards, and we watched the show.
-      Most APIs out there do seem like random data or pertain to more serious topics.
-      We found out that PokéAPI exists, which gave us the idea to do something different
-      and make a fun application dedicated to an important part of our childhoods.
+    <div>
+      <h1>What inspired us?</h1>
+      <div id="images">
+        <img id="img1" src="../assets/Pokemon-Games-In-Order.jpg"></img>
+        <img id="img2" src="../assets/tradingcardgame.jpg"></img>
+        <img id="img3" src="../assets/ash-pikachu.jpg"></img>
+      </div>
+      <div id="text1">All four of us grew up with Pokémon, and I'm sure many of you reading have had the same experience.
+        We played the games, we collected the cards, and we watched the show.
+        Most APIs out there do seem like random data or pertain to more serious topics.
+        We found out that PokéAPI exists, which gave us the idea to do something different
+        and make a fun application dedicated to an important part of our childhoods.
 
+      </div>
     </div>
-  </div>
   </section>
 
   <!-- Footer -->
@@ -105,6 +80,6 @@
       </div>
     </nav>
   </footer>
-  
 </body>
+
 </html>
