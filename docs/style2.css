@@ -1,6 +1,9 @@
 body{
     background-color: rgba(218, 209, 209, 0.404);
     background-image: url('assets/ruby-sapphire-intro-gradient.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 .buttons { 
     padding: 10px;
