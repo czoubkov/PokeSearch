@@ -1,6 +1,6 @@
 body{
     background-color: rgba(218, 209, 209, 0.404);
-    background-image: url('assets/ruby-sapphire-intro-gradient.jpg');
+    background-image: url('../assets/ruby-sapphire-intro-gradient.jpg');
 }
 .buttons { 
     padding: 10px;
@@ -35,7 +35,7 @@ body{
 .list{
     margin: auto;
     max-width: 410px;
-    max-height: 760px;
+    max-height: 700px;
     overflow-y:auto;
 }
 /* width */

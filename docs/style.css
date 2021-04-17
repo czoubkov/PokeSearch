@@ -9,7 +9,7 @@ body {
   overflow-y: hidden;
 }
 #home, #searchbyname, #about {
-  background-image: url('assets/ruby-sapphire-intro-gradient.jpg');
+  background-image: url('../assets/ruby-sapphire-intro-gradient.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -51,7 +51,6 @@ body {
 #infoBox .images {
   margin-top: 2.5rem;
   text-align: center;
-  padding-bottom: 10%;
 }
 #infoBox .images .card {
   box-shadow: 2px 2px 4px 0 #333;
@@ -67,9 +66,9 @@ body {
 #infoBox img {
   border-radius: 0;
 }
-#infoBox .card-body {
+/* #infoBox .card-body {
   margin: auto;
-}
+} */
 #infoBox .poke-info {
   margin-top: 2.5rem;
   text-align: center;
@@ -87,31 +86,7 @@ body {
   display: inline;
   margin-left: 2rem;
 }
-/* Footer */
-#footer {
-  background-color: #333;
-  color: #ffffff;
-  width: 100%;
-  height: 6%;
-}
-.nonstickyfooter {
-  position: relative;
-  bottom: 0;
-}
-.stickyfooter {
-  position: fixed;
-  bottom: 0;
-}
-#footer .fab:hover,
-#footer .fas:hover {
-  color: #e6e6e6;
-}
-.card-text {
-  text-align: left;
-}
-#footer a {
-  color: white;
-}
+
 i:hover {
   transform: scale(1.2)
 }
